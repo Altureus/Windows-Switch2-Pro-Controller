@@ -1,0 +1,14 @@
+# Python build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# runtime / transient
+*.pid
+*.log
+
+# generated controller mapping is intentionally tracked (mapping_data.py),
+# but local Dolphin captures / scratch files are not
+*.pcapng
+*.etl
+scratch/
