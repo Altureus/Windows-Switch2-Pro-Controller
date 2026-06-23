@@ -53,7 +53,13 @@ def main():
             print(f"{OK} ViGEmBus driver installed and working")
         except Exception as e:
             print(f"{NO} ViGEmBus driver not working ({type(e).__name__})")
-            print(f"       Install it (one-click): {VIGEMBUS_URL}")
+            drivers = os.path.join(os.path.dirname(HERE), "drivers")
+            inst = next((f for f in os.listdir(drivers)
+                         if f.lower().startswith("vigembus") and f.lower().endswith(".exe")),
+                        None) if os.path.isdir(drivers) else None
+            if inst:
+                print(f"       Install the bundled driver: drivers\\{inst}  (double-click, needs admin)")
+            print(f"       Or get the latest: {VIGEMBUS_URL}")
             problems.append("ViGEmBus driver not installed")
 
     # 4. Controller present? (informational -- not required to pass)

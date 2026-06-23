@@ -38,10 +38,15 @@ Switch 2 Pro (asleep)  ->  WinUSB bulk wake        (winusb.py)
 
 ## Quick start
 
+> **Don't want to install Python?** Grab the prebuilt **`Switch2ProBridge.exe`** from the
+> [latest release](../../releases/latest): run the bundled ViGEmBus installer once, then run
+> the exe — that's it. The Python steps below are only for running from source.
+
 1. **Install Python 3** — <https://www.python.org/downloads/>. In the installer, tick
    **"Add python.exe to PATH"**. (No `pip install` needed — this app has *zero* Python dependencies.)
-2. **Install the ViGEmBus driver** — <https://github.com/nefarius/ViGEmBus/releases/latest>
-   (one click; it's the kernel-mode piece that can't be bundled).
+2. **Install the ViGEmBus driver** — double-click the bundled
+   **`drivers/ViGEmBus_1.22.0_x64_x86_arm64.exe`** (one click, needs admin); it's the
+   kernel-mode piece. Newer versions: <https://github.com/nefarius/ViGEmBus/releases/latest>.
 3. **Get this repo** — download the [latest release](../../releases/latest) zip (or `git clone`) and unzip it.
 4. *(Recommended)* double-click **`Setup Check.bat`** — it verifies Python + ViGEmBus are
    ready and flags anything missing.

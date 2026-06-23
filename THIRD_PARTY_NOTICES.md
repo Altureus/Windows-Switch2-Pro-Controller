@@ -9,6 +9,12 @@ This project bundles or builds on the following:
   **ViGEmBus** driver is a **separate install** and is required at runtime:
   <https://github.com/nefarius/ViGEmBus>.
 
+- **ViGEmBus driver installer** (`drivers/ViGEmBus_1.22.0_x64_x86_arm64.exe`) — the
+  official ViGEmBus setup, v1.22.0, by Nefarius Software Solutions e.U., bundled
+  unmodified for convenience so users can install the required kernel driver without
+  a separate download. Source, newer versions, and license:
+  <https://github.com/nefarius/ViGEmBus>.
+
 - **Switch 2 Pro Controller wake + haptic protocol** — reverse-engineered with
   help from HandHeldLegend's ProCon2Tool and the
   [`NSW2-controller-enabler`](https://github.com/ikz87/NSW2-controller-enabler)

@@ -12,3 +12,9 @@ __pycache__/
 *.pcapng
 *.etl
 scratch/
+
+# PyInstaller .exe build artifacts (rebuild with build_exe.bat; the .exe ships
+# as a GitHub release asset, not committed to git)
+build/
+dist/
+*.spec
